@@ -1,6 +1,6 @@
 # knowledge-base
 
-Common knowledge for resolving common issues
+Common knowledge for resolving common issues.
 
 ## Vue.js
 
