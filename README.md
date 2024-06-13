@@ -13,6 +13,15 @@ postgres=# CREATE USER myuser WITH ENCRYPTED PASSWORD 'mypassword';
 postgres=# GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
 ```
 
+**Warning**
+
+New for Postgres 15 (additionally need to grant permissions to public schema):
+```
+sudo -u postgres psql
+postgres=# \c mydb;
+mydb=# GRANT USAGE, CREATE ON SCHEMA public TO myuser;
+```
+
 ## Vue.js
 
 ### Local development
