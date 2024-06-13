@@ -2,6 +2,17 @@
 
 Common knowledge for resolving common issues.
 
+## Postgres
+
+### Create DB with user
+
+```
+sudo -u postgres psql
+postgres=# CREATE DATABASE mydb;
+postgres=# CREATE USER myuser WITH ENCRYPTED PASSWORD 'mypassword';
+postgres=# GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
+```
+
 ## Vue.js
 
 ### Local development
